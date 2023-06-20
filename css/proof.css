@@ -1,0 +1,88 @@
+
+body {
+    padding: 20px;
+    font-family: Verdana, Arial, sans-serif;
+}
+label {
+    display: inline-block;
+    min-width: 200px;
+    text-align: right;
+    margin-right: 5px;
+}
+.container {
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 900px;
+}
+.smallFont {
+    font-size: 10px;
+}
+.displayField b{
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 10px 0px 0px;
+    width: 190px;
+    text-align: right;
+}
+.displayField span{
+    display: inline-block;
+    width: 500px;
+    margin: 10px 0;
+}
+.inputField {
+    margin-top: 5px;
+}
+.inputField b {
+    margin: 10px 10px 0px 0px;
+}
+.stepOneUnlock {
+    display: none;
+}
+.stepTwoUnlock {
+    display: none;
+}
+.stepThreeUnlock {
+    display: none;
+}
+.stepFourUnlock {
+    display: none;
+}
+.wordBreak {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+}
+.boldRed {
+    color: #ae1a1a;
+    font-weight: bold;
+}
+.boldGreen {
+    color: #1b9b0b;
+    font-weight: bold;
+}
+.boldBlue {
+    color: #0F57FF;
+    font-weight: bold;
+}
+.blueButton {
+    border: 0px none;
+    border-radius: 5px;
+    width: 250px;
+    height: 54px;
+    line-height: 54px;
+    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(15, 87, 255) 0%, rgb(31, 180, 255) 100%) repeat scroll 0% 0%;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    // padding: 16px 20px;
+    margin: 30px 0px 30px 200px;
+    text-decoration: none;
+    text-align: center;
+    outline: currentcolor none medium;
+    transition: background-color 0.3s ease 0s, width 0.3s ease 0s, border-width 0.3s ease 0s, border-color 0.3s ease 0s, border-radius 0.3s ease 0s;
+}

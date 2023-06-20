@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>BlocPalX root hash generator</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/FileSaver.js"></script>
+        <script type="text/javascript" src="js/bundle.js"></script>
+		<link rel="stylesheet" href="css/proof.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<div style="float: right;"><img src="images/blocpal-logo.svg" width="230px" style="vertical-align: middle;"/></div>
+				<div style="padding-top: 10px;"><h1 style="font-size: large;">Proof of reserves - Merkle tree generator</h1></div>
+			</div>
+
+			<br/>
+			<br/>
+
+			<div>
+				<p>
+					Select your exchange provided user balances file:
+				</p>
+				<br/>
+				<input class="exchangeFileUpload" type="file">
+			</div>
+
+			<div class="blueButton generateMerkleTree">Generate Merkle tree</div>
+
+			<div class="displayField">
+				<b>Status:</b> <span class="stepOneStatus">Awaiting file upload</span> <br>
+				<b>Proof date:</b> <span class="fileProofDate"></span> <br>
+				<b>User count:</b> <span class="userNums"></span> <br>
+				<b>Total balances:</b> <span class="totalBalances"></span> <br>
+				<b>Merkle root hash:</b> <span class="computedRootHash"></span> <br>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript">
+		$(function () {
+		})
+	</script>
+</html>

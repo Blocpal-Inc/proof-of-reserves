@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>BlocPalX user balance verification</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bundle.js"></script>
+		<link rel="stylesheet" href="css/proof.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<div style="float: right;"><img src="images/blocpal-logo.svg" width="230px" style="vertical-align: middle;"/></div>
+				<div style="padding-top: 10px;"><h1 style="font-size: large;">Proof of reserves and user balance verification</h1></div>
+			</div>
+			<br>
+			<h3>Step 1 - Copy your proof sentence from the BlocPalX website</h3>
+
+			<img src="images/copy-to-clipboard.png" align = "right" width="250" style="margin-left: 10px;"/>
+			<p>
+				Log into your BlocPalX account and browse to [Account], [Proof of Reserves].
+				(<a href="https://x.blocpal.com/account/profile/proofOfReserves" target="_blank">https://x.blocpal.com/account/profile/proofOfReserves</a>)
+				On that page, you can see a list of all the reports done and your proof sentence for each one. Copy your proof sentence from the proof of reserves you want to participate in, then paste it in the field below. If it is a valid proof sentence, we will automatically detect what file we need to load.
+			</p>
+			<br/>
+
+			<div class="inputField">
+				<b>Your proof sentence: </b>
+				<textarea placeholder="Paste Proof Sentence here..." rows="6" cols="50" class="inputProofSentence" style="vertical-align: top"></textarea>
+			</div>
+
+			<div class="stepOneUnlock">
+				<div class="displayField">
+					<b>Merkle Proof Id:</b> <span class="sentenceProofId"></span> <br>
+					<b>Merkle Proof File:</b> <span class="smallFont downloadFilePath wordBreak"></span> <br>
+					<b>Step 1 Status:</b> <span class="stepOneStatus">No file loaded</span> <br>
+				</div>
+				<div class="blueButton loadAuditFileButton">Step 1: Load Audit File</div>
+			</div>
+
+			<div class="stepTwoUnlock">
+				<h3>Step 2 - Verify you were included in the proof of reserves file</h3>
+
+				<div class="displayField">
+					<b>Personal String:</b> <span class="personalString"></span> <br>
+					<b>Public Account Code:</b> <span class="pubCode"></span> <br>
+					<b>Balances String:</b> <span class="balancesString"></span> <br>
+					<b>Step 2 Status:</b> <span class="stepTwoStatus">Click to run verification</span> <br>
+				</div>
+
+				<div class="blueButton verifyButton">Step 2: Run Verification</div>
+			</div>
+
+			<div class="stepThreeUnlock">
+				<div class="displayField">
+					<b>Merkle Proof File:</b> <span class="merkleFileName"></span> <br>
+					<b>Your Sentence Hash:</b> <span class="computedUserHash"></span> <br>
+					<b>Found Your Hash At:</b> <span class="hashFileLineNumber"></span> <br>
+				</div>
+
+				<br/>
+				<h3>Step 3 - Verify you were included in the Merkle tree root hash</h3>
+
+				<div class="displayField">
+					<b>Proof Date:</b> <span class="fileProofDate"></span> <br>
+					<b>User Count:</b> <span class="userNums"></span> <br>
+					<b>Total Balances:</b> <span class="totalBalances"></span> <br>
+					<b>Merkle Root Hash:</b> <span class="computedRootHash"></span> <br>
+					<b>Your Proof Chain:</b> <span class="computedUserProof"></span> <br>
+					<b>Merkle Proof Result:</b> <span class="stepThreeStatus"></span> <br>
+				</div>
+			</div>
+
+			<div class="stepFourUnlock">
+				<br/>
+				<h3>Thank you for participating!</h3>
+				<div class="displayField">
+					<b>Your Reward Code:</b> <span class="userRewardCode"></span> <br>
+				</div>
+			</div>
+
+			<br/>
+			<p>
+				You can browse all available audits here:
+				<br/>
+				<a href="https://github.com/Blocpal-Inc/proof-of-reserves/blob/main/audit_files/" target="_blank" rel="noopener noreferrer">https://github.com/Blocpal-Inc/proof-of-reserves/blob/main/audit_files/</a>
+			</p>
+			<p>
+				Or view the source code for this validation tool here:
+				<br/>
+				<a href="https://github.com/Blocpal-Inc/proof-of-reserves" target="_blank" rel="noopener noreferrer">https://github.com/Blocpal-Inc/proof-of-reserves</a>
+			</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function () {
+		})
+	</script>
+</html>

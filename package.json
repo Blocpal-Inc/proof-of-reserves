@@ -1,0 +1,13 @@
+{
+  "name": "txquick-proof-of-reserves",
+  "version": "0.0.1",
+  "description": "TxQuick's proof-of-reserves using Merkle tree",
+  "repository": "https://gitlab.com/txquick/proof-of-reserves",
+  "license": "Conditional Commercial",
+  "dependencies": {
+    "browserify": "^16.5.2",
+    "crypto-js": "^4.0.0",
+    "merkle-tools": "^1.4.1",
+    "watchify": "^4.0.0"
+  }
+}
