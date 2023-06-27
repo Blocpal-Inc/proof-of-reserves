@@ -7,7 +7,7 @@ const Sha256 = require('crypto-js/sha256');
 
 const CSV_DELIMITER = ',';
 const NEW_LINE = '\r\n';
-const AUDIT_FILE_PATH_TEMPLATE = 'https://raw.githubusercontent.com/Blocpal-Inc/proof-of-reserves/main/audit_files/BlocPalX_ProofOfReserves_PROOFDATE_merkletree.txt';
+const AUDIT_FILE_PATH_TEMPLATE = 'https://raw.githubusercontent.com/Blocpal-Inc/proof-of-reserves/master/audit_files/BlocPalX_ProofOfReserves_PROOFDATE_merkletree.txt';
 
 /**
  * jQuery HTML interface
@@ -38,7 +38,7 @@ $(function() {
 			"] on deposit at the time.
 		*/
 		
-		const matches = proofSentence.match(/\[[a-zA-Z0-9-\:\.\s]+?\]/g);
+		const matches = proofSentence.match(/\[[a-zA-Z0-9-\@\*\:\.\s]+?\]/g);
 		if (matches.length >= 3) {
 			const personalString = matches[0].replace(/[\[\]]+/g, '');
 			$('.personalString').html(personalString);
