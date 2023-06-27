@@ -52,7 +52,7 @@ $(function() {
 			}
 
 			if (sentenceProofId && sentenceProofId !== '') {
-				merkleFilePath = AUDIT_FILE_PATH_TEMPLATE.replace('PROOFDATE', sentenceProofId.replace(' ', '_'));
+				merkleFilePath = AUDIT_FILE_PATH_TEMPLATE.replace('PROOFDATE', sentenceProofId.replaceAll(' ', '_'));
 				const htmlLink = '<a href="' + merkleFilePath + '" target="_blank" rel="noopener noreferrer">' + merkleFilePath + '</a>';
 				$('.downloadFilePath').html(htmlLink);
 				$('.stepOneUnlock').show();
