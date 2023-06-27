@@ -1,8 +1,8 @@
 {
-  "name": "txquick-proof-of-reserves",
+  "name": "blocpal-proof-of-reserves",
   "version": "0.0.1",
-  "description": "TxQuick's proof-of-reserves using Merkle tree",
-  "repository": "https://gitlab.com/txquick/proof-of-reserves",
+  "description": "BlocPal's proof-of-reserves using Merkle tree",
+  "repository": "https://gitlab.com/Blocpal-Inc/proof-of-reserves",
   "license": "Conditional Commercial",
   "dependencies": {
     "browserify": "^16.5.2",
