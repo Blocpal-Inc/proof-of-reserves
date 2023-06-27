@@ -35,7 +35,7 @@ Previous implementations of **proof of reserves** systems needed to be easier fo
 
 If you want to dive right in, you can start by browsing to one of the participating verification websites:
 
-[BlocPalX - proof of reserves.](https://x.blockapl.com/proof-of-reserves) 
+[BlocPalX - proof of reserves.](https://blocpal-inc.github.io/proof-of-reserves/) 
 
 [Quadriga Initiative.](https://quadrigainitiative.org/proof-of-reserves) (coming soon)
 
@@ -48,7 +48,7 @@ Then follow the instructions provided.
 Log into your BlocPalX account and browse to [Account], [Proof of reserves]. (https://x.blocpal.com/account/profile/proofOfReserves) On that page you can see a list of all of the audits that have been done and your proof sentence for each audit. Copy your proof sentence from the proof of reserves report you want to participate in. 
 
    <p align="center"> 
-    <img src="images/userdata.png" style="width:600px;"/>
+    <img src="images/userdata_1.webp" style="width:600px;"/>
    </p>
 
 ### STEP 2 - Verify you were included in the proof of reserves file.
@@ -56,19 +56,19 @@ Log into your BlocPalX account and browse to [Account], [Proof of reserves]. (ht
 Browse to one of the **verification websites** listed above and paste in your **proof sentence**. After you have pasted your **proof sentence** into the **verification website**, click the "Load report file" button.  The tool will download the **proof of reserves** file from GitHub. After the **report file** is loaded, next click the "Run verification" button.
 
    <p align="center">
-    <img src="images/validate.png" alt="" style="width:600px;"/>
+    <img src="images/validate_1.webp" alt="" style="width:600px;"/>
    </p>
 
 You should see a successful result looking something like this:
 
    <p align="center">
-    <img src="images/validate2.png" alt="" style="width:600px;"/>
+    <img src="images/validate2_1.webp" alt="" style="width:600px;"/>
    </p>
 
 And further down on the page you should see verification of the **Merkle proof** result as well:
 
    <p align="center">
-    <img src="images/validate3.png" alt="" style="width:600px;"/>
+    <img src="images/validate3_1.webp" alt="" style="width:600px;"/>
    </p>
 
 That's it!
@@ -82,7 +82,7 @@ That's it!
 BlocPalX provides the trusted third party with the GitHub link to download anonymous details of user data and user balances on a per-token basis.  Every download of audit data from the exchange platform generates a unique **proof id**, which can be used to reference each unique **Merkle tree proof** throughout the process. The trusted third party then imports the downloaded CSV file into root-hash-generator.html to generate an audit report, including the total balances and the **Merkle tree root hash**.
 
    <p align="center">
-    <img src="images/root-hash-generator.png" alt="" style="width:600px;"/>
+    <img src="images/root-hash-generator_1.webp" alt="" style="width:600px;"/>
    </p>
 
 #### STEP 1(B): The auditor verifies the total user balances and publishes the merkle tree and root hash.
@@ -102,7 +102,7 @@ The trusted third party now must independently publish the resulting data from t
 Users wishing to verify their balance is represented in the **Merkle tree** will need to log into their BlocPalX account, browse to their account **proof of reserves** page, and look up their **proof sentence** as of the time that **merkle tree proof** was created.
 
    <p align="center"> 
-    <img src="images/userdata.png" style="width:600px;"/>
+    <img src="images/userdata_1.webp" style="width:600px;"/>
    </p>
 
 #### STEP 2(B): Users download and install this software
@@ -114,7 +114,7 @@ Users wishing to run their own in-depth proof may download, inspect, install, an
 Finally users must open index.html in their browser. Then the user must input their own Proof Sentence and follow the instructions to run the verification process. If the user data and balance provided matches the record in the Merkle Tree, a successful result will be displayed together with the node location of the user information within the Merkle tree. The Merkle Tree's root hash will be re-calculated using the imported file so that the user can verify the root hash and compare it to the root hash the trusted third party published in Step 1(C) above to ensure the correctness and completeness of the **Merkle tree**.
 
    <p align="center">
-    <img src="images/validate.png" alt="" style="width:600px;"/>
+    <img src="images/validate_1.webp" alt="" style="width:600px;"/>
    </p>
 
 ### PART 3 - (All participants) proof of assets.
@@ -124,7 +124,7 @@ Finally users must open index.html in their browser. Then the user must input th
 BlocPalX provides the public with blockchain addresses used to store customer assets. These addresses are available at https://x.blocpal.com/walletStatus. To prove ownership of these addresses, BlocPalX conducts transactions moving small, pre-determined amounts from each major wallet identified. These transactions can be observed by the public and a trusted third party on a periodic basis.
 
    <p align="center">
-    <img src="images/walletstatus.png" alt="" style="width:600px;"/>
+    <img src="images/walletstatus_1.webp" alt="" style="width:600px;"/>
    </p>
 
 #### STEP 3(B): The public and/or trusted third party adds up the balances all BlocPalX public chain wallets.
@@ -198,7 +198,7 @@ Please reference the LICENSE prior to installation. This software is FREE to use
 
 ## Credits
 
-Th process of using Merkle trees as a tool for roof of reserves is conceptually derrived from the work of many.  Development of this specific implementation utilizing proof sentences is the result of a collaborative effort between BlocPalX, TxQuick and The Quadriga Initiative (https://www.quadrigainitiative.org/) as well as many long discussions with the Calgary based CryptOasis crew.
+The process of using Merkle trees as a tool for the roof of reserves is conceptually derived from the work of many.  Development of this specific implementation utilizing proof sentences is the result of a collaborative effort between BlocPalX, TxQuick and The Quadriga Initiative (https://www.quadrigainitiative.org/) as well as many long discussions with the Calgary-based CryptOasis crew.
 
 This software was created by BlocPalX to provide a reference implementation and to facilitate adoption.
 

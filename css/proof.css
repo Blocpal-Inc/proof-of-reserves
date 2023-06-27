@@ -1,7 +1,7 @@
 
 body {
     padding: 20px;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: Inter,sans-serif;
 }
 label {
     display: inline-block;
@@ -63,7 +63,7 @@ label {
     font-weight: bold;
 }
 .boldGreen {
-    color: #1b9b0b;
+    color: #ef8632;
     font-weight: bold;
 }
 .boldBlue {
@@ -76,7 +76,7 @@ label {
     width: 250px;
     height: 54px;
     line-height: 54px;
-    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(15, 87, 255) 0%, rgb(31, 180, 255) 100%) repeat scroll 0% 0%;
+    background: #031847;
     color: rgb(255, 255, 255);
     cursor: pointer;
     // padding: 16px 20px;
@@ -85,4 +85,8 @@ label {
     text-align: center;
     outline: currentcolor none medium;
     transition: background-color 0.3s ease 0s, width 0.3s ease 0s, border-width 0.3s ease 0s, border-color 0.3s ease 0s, border-radius 0.3s ease 0s;
+}
+
+.blueButton:hover{
+    background: #062c7f;
 }

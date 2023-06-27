@@ -90,7 +90,7 @@ $(function() {
 					$('.stepOneStatus')
 						.addClass("boldGreen")
 						.removeClass("boldRed")
-						.html('File loaded! Move on to Step 2');
+						.html('File loaded! Move on to step 2');
 					$('.stepTwoUnlock').show();
 				} else {
 					$('.stepOneStatus')
