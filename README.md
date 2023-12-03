@@ -1,6 +1,6 @@
 # BlocPalX proof-of-reserves
 
-Welcome to the BlocPalX proof of reserves audit tools.  This document explains the BlocPalX **proof of reserves** system, and the accompanying tools which we provide to make it easy for our clients to participate.
+Welcome to the [BlocPalX](https://x.blocpal.com/?utm_source=githhub.com&utm_medium=referral&utm_content=proof_reserve_page) proof of reserves audit tools.  This document explains the BlocPalX **proof of reserves** system, and the accompanying tools which we provide to make it easy for our clients to participate.
 
 ## Table of Contents
 - [Proof-of-reserves](#blocpalx-proof-of-reserves)
